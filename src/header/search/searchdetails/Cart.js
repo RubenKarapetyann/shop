@@ -9,6 +9,6 @@ export default memo(function({cart}){
         color : themeMap[theme].text
     }}
     className="searchBox">
-        <p><FaShoppingCart/><strong>{cart}</strong></p>
+        <p><FaShoppingCart/>{cart}</p>
     </div>)
 })

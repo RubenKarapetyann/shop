@@ -67,6 +67,7 @@
     height: fit-content;
 }
 .searchBox{
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,5 +117,11 @@
     .logoContainer{
         width: 20%;
         height : 50%
+    }
+    .searchBox > p{
+        font-size: 12px;
+    }
+    .searchSelect{
+        display: none;
     }
 }
