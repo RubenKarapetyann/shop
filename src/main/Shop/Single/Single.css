@@ -13,6 +13,7 @@
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .SingleImg{
     width: 50%;
@@ -23,7 +24,7 @@
     box-sizing: border-box;
 }
 .SingleDescription{
-    width: 50%;
+    width: 300px;
     height: fit-content;
     min-height: 70vh;
     box-sizing: border-box;
@@ -63,3 +64,28 @@
     flex-wrap: wrap;
     border-top: 1px gray solid;
 }
+
+
+@media (max-width : 1050px) {
+    .SingleImg {
+        width: 450px;
+        height: 320px;
+    }
+}
+
+
+@media (max-width : 900px) {
+    .SingleImg {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width : 700px) {
+    .SingleImg {
+        width: 300px;
+        height: 200px;
+    }
+}
+
