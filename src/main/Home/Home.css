@@ -104,3 +104,27 @@
 .getStartBtn:hover {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
+
+@media (max-width : 700px) {
+    .BgImage>p {
+        font-size: 50px;
+    }
+    .shoes{
+        width: 25%;
+        left: 160px;
+        top: 100px;
+        rotate: (80deg);
+    }
+}
+
+@media (max-width : 400px) {
+    .BgImage>p {
+        font-size: 50px;
+    }
+    .shoes{
+        width: 25%;
+        left: 50px;
+        top: 50px;
+        rotate: (80deg);
+    }
+}
