@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './MainApp.css';
 import Header from "./header/Header"
 import Main from "./main/Main"
@@ -30,24 +30,24 @@ function MainApp() {
     }
   },[active,searchInputValue])
 
-  const addCartItem = useCallback((item)=> setCart(prev=> [...prev,item]),[])
-  const removeCartItem = useCallback((item)=> setCart(prev=>prev.filter((val)=>val.id !== item.id)),[])
-  const shopModeActiveSeter = useCallback(() =>setShopAcitve(MANY.activeName),[])
-  const activeSeter = useCallback((act)=>{
+  const addCartItem = (item)=> setCart(prev=> [...prev,item])
+  const removeCartItem = (item)=> setCart(prev=>prev.filter((val)=>val.id !== item.id))
+  const shopModeActiveSeter = () =>setShopAcitve(MANY.activeName)
+  const activeSeter = (act)=>{
     shopModeActiveSeter()
     setActive(act)
-  },[])
-  const searchInputValueSeter = useCallback((text)=> setSearchInputValue(text),[])
-  const stateUpdater = useCallback((moreState)=>setState(prev=>[...prev,...moreState]),[])
-  const manuActiveSeter = useCallback(()=> setManuActive(prev=>!prev),[])
-  const manuOfferActiveSetter = useCallback((act,mode)=>{
+  }
+  const searchInputValueSeter = (text)=> setSearchInputValue(text)
+  const stateUpdater = (moreState)=>setState(prev=>[...prev,...moreState])
+  const manuActiveSeter = ()=> setManuActive(prev=>!prev)
+  const manuOfferActiveSetter = (act,mode)=>{
     activeSeter(act)
     manuActiveSeter()
     if(mode === "f"){
       setShopAcitve(FAVORITES.activeName)
     }
-  },[])
-  const shopAcitveHandle = useCallback((shoes)=>setShopAcitve(shoes),[])
+  }
+  const shopAcitveHandle = (shoes)=>setShopAcitve(shoes)
 
 
   
