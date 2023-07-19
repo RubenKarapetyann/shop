@@ -17,12 +17,12 @@ function Card({name,imgUrl,id,rate,description,price,singleItemHandle}){
         <div className="cardDescription" style={{
             color : themeMap[theme].text
         }}>
-            <p>{name}</p>
+            <p className="cardDescriptionTitle">{name}</p>
             <p style={{
                 fontSize : "10px",
                 color : "gray",
                 textAlign : "center"
-            }}>{description}</p>
+            }} className="cardDescriptionText">{description}</p>
             <p>{starsArr.map((val,i)=><span key={i}>{val}</span>)}</p>
             <p style={{
                 fontSize : "22px",

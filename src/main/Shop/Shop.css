@@ -15,7 +15,7 @@
     z-index: 3;
 }
 .card{
-    width: 20vw;
+    width: 250px;
     height: 50vh;
     border: 1px solid rgb(172, 140, 140);
     display: flex;
@@ -64,4 +64,14 @@
     width: 90%;
     height: 45%;
     justify-content: center;
+}
+
+
+@media (max-width : 700px) {
+    .cardDescriptionText{
+        display: none;
+    }
+    .cardDescriptionTitle{
+        font-size: 12px;
+    }
 }
