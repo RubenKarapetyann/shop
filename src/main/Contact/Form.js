@@ -13,6 +13,7 @@ export default function(){
         <label><input type="email" ref={emailRef}/></label>
         <p>message</p>
         <label><input type="text" ref={messageRef}/></label>
+        <br/>
         <button className="getStartBtn" onClick={sendHandle}>Send</button>
     </div>)
 }

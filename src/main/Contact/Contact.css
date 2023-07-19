@@ -35,3 +35,9 @@ label{
 .form>label>input:focus{
     outline: none;
 }
+
+@media (max-width : 700px) {
+    .map { 
+        display: none;
+    }
+}
