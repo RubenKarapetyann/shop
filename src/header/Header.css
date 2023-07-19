@@ -33,7 +33,6 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-
 }
 .navbar{
     display: flex;
@@ -63,7 +62,7 @@
     background-color: var(--background2);
 }
 .navBarItem>p{
-    font-size: 25px;
+    font-size: 16px;
     width: fit-content;
     height: fit-content;
 }
@@ -105,4 +104,17 @@
 }
 .searchFlag{
     height: 70%;
+}
+
+@media(max-width : 1000px) {
+    .navBarItem>p { 
+        font-size: 10px;
+    }
+    .logo{
+        width: 40%;
+    }
+    .logoContainer{
+        width: 20%;
+        height : 50%
+    }
 }
