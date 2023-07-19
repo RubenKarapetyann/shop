@@ -1,0 +1,13 @@
+.slider{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    position: absolute;
+    top: 15vh;
+}
+.slider>img{
+    width: 100%;
+    height: auto;
+    transition: 2s;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))
+}

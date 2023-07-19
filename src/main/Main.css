@@ -1,0 +1,15 @@
+.main{
+    background-color: #eff6e0;
+    width: 100%;
+    height: fit-content;
+    min-height: 85vh;
+}
+:root{
+    --background : #f8f5f5;
+    --background2 : #c4c7ca;
+    --mainBackground : #faf4f4;
+    --backgroundDark : #6b6767;
+    --background2Dark : #3f4144;
+    --mainBackgroundDark : #2c2c2c;
+    --cardbackgroundDark : rgb(56, 54, 54);
+}

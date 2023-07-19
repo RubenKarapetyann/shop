@@ -1,0 +1,33 @@
+.manu{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    display: flex;
+}
+.mainManu{
+    width: 30%;
+    height: 100%;
+    background-color: var(--background);
+}
+.rightManu{
+    width: 70%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+.chip{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    width: 90%;
+    height: 5vh;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.chip:hover{
+    background-color: var(--background2);
+}

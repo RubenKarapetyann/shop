@@ -1,0 +1,108 @@
+.header{
+    display: flex;
+    background-color: var(--background); 
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    background-color: var(--background2);
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.logoContainer{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.navbar{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbarContainer{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navBarItem{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+.navBarItem:hover{
+    background-color: var(--background2);
+}
+.navBarItem>p{
+    font-size: 25px;
+    width: fit-content;
+    height: fit-content;
+}
+.searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.searchInput{
+    width: 50%;
+    height: 80%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 5px;
+    box-shadow: inset rgba(100, 100, 111, 0.2) 0px 0px 5px 2.5px;
+}
+.searchInput:focus{
+    outline: none;
+}
+.searchBtn{
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 5%;
+    height: 80%;
+    cursor: pointer;
+}
+.searchBtn:hover{
+    background-color: rgb(223, 214, 214);
+}
+.searchSelect{
+    border: none;
+}
+.searchSelect:focus{
+    outline: none;
+    padding: 1px;
+}
+.searchFlag{
+    height: 70%;
+}
